@@ -4,7 +4,6 @@ on:
 jobs:
     ubuntu-echo:
         runs-on: ubuntu-latest
-        shell: bash
         steps:
             - name: Show OS
               run: |
