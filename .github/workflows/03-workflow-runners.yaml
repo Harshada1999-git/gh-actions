@@ -15,11 +15,11 @@ jobs:
       - name: Show OS
         run: |
           echo "This job is running on a Windows runner."
-          echo "${{ github.runner }}"
+          echo "print ${{ github.runner }}"
   mac-echo:
     runs-on: macos-latest
     steps:
       - name: Show OS
         run: |
           echo "This job is running on a MacOS runner."
-          echo "${{github.runner}}"
+          echo "print ${{github.runner}}"
