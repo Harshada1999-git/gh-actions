@@ -19,7 +19,7 @@ jobs:
   build:
     ubuntu-latest:
     steps: 
-      - name: build
+      - name: Build
         run: echo "Building from tag ${{ inputs.tag }}"
   deploy:
     needs: build
