@@ -12,6 +12,7 @@ jobs:
             - name: Lint and Build
               run: echo "Linting and Building Project"
     Unit-tests:
+        continue-on-error: true
         runs-on: ubuntu-latest
         steps:
             - name: Running unit tests
