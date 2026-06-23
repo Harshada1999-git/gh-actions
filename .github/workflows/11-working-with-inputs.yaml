@@ -17,14 +17,14 @@ on:
         description: "Release from Which to build and deploy"
 jobs:
   build:
-    runs-on: ubuntu-latest:
+    runs-on: ubuntu-latest
     steps: 
       - name: Build
         run: echo "Building from tag ${{ inputs.tag }}"
   deploy:
     needs: build
     if: ${{ !inputs.dry-run }}
-    runs-on: ubuntu-latest:
+    runs-on: ubuntu-latest
     environment: ${{ inputs.target}}
     steps:
       - name: Deploy 
